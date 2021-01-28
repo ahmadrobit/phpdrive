@@ -27,7 +27,7 @@ $app->get('/mama', function() use($app) {
 });
 $app->get('/drive', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return "drive";
+  include "drive.php";
 });
 
 $app->run();
