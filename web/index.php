@@ -27,7 +27,7 @@ $app->get('/mama', function() use($app) {
 });
 $app->get('/upload', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return echo "coba upload";
+  return "coba upload";
 });
 
 $app->run();
