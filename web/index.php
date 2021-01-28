@@ -25,5 +25,9 @@ $app->get('/mama', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('mama/index.twig');
 });
+$app->get('/upload', function() use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('drive/upload/index.php');
+});
 
 $app->run();
