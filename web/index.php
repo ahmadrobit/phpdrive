@@ -27,7 +27,7 @@ $app->get('/mama', function() use($app) {
 });
 $app->get('/drive', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('mama/index.twig');
+  return "drive";
 });
 
 $app->run();
