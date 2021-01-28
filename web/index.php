@@ -23,7 +23,7 @@ $app->get('/', function() use($app) {
 });
 $app->get('/mama', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
+  return $app['twig']->render('mama/index.twig');
 });
 
 $app->run();
